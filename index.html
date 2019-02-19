@@ -12,7 +12,8 @@
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<!-- Printing and PDF exports -->
 	<script>
@@ -23,8 +24,11 @@
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 	<style>
-		.tickmark {
+		.tickmark, .demoicon {
 			color: green;
+		}
+		section.demo {
+			display: flex;
 		}
 	</style>
 </head>
@@ -87,22 +91,46 @@
 					<li>Iterate - Gift Register</li>
 				</ul>
 			</section>
-			<div class="slides">
-				<section>
-					<section class="slide" id="current">
-						<h2>Tool Selection</h2>
-						<ul>
-							<li><a href="https://developers.google.com/web/tools/puppeteer/">Puppeteer</a></li>
-							<li><a href="https://devexpress.github.io/testcafe/">Test Cafe</a></li>
-							<li><a href="https://webdriver.io/">Webdriver IO</a> <i class="fas fa-check tickmark"></i></li>
-						</ul>
-					</section>
-					<section>Puppeteer</section>
-					<section>Test Cafe</section>
-					<section>Webdrive IO</section>
+			<section>
+				<section class="slide">
+					<h2>Tool Selection</h2>
+					<ul>
+						<li><a href="https://developers.google.com/web/tools/puppeteer/">Puppeteer</a></li>
+						<li><a href="https://devexpress.github.io/testcafe/">Test Cafe</a></li>
+						<li><a href="https://webdriver.io/">Webdriver IO</a> <i class="fas fa-check tickmark"></i></li>
+					</ul>
 				</section>
-			</div>
-
+				<section>
+					Puppeteer - Google
+					<img src="images/puppeteer.PNG" alt="Puppeteer Tool">
+				</section>
+				<section>
+					Test Cafe - DevExpress
+					<img src="images/test-cafe.PNG" alt="Test Cafe Tool">
+				</section>
+				<section>
+					Webdrive IO
+					<img src="images/webdriver-io.PNG" alt="Webdriver IO Tool">
+				</section>
+			</section>
+			<section>
+				<h2>Code - High Level</h2>
+				<ul>
+					<li>Walk-thorugh - Gift Register Workflow</li>
+					<li>Building Blocks
+						<ul>
+							<li>Components</li>
+							<li>DB Access</li>
+						</ul>
+					</li>
+					<li>Composable Functions</li>
+					<li>Composition</li>
+				</ul>
+			</section>
+			<section id="current" class="demo" style="display: flex">
+				<p>Demo &nbsp;</p>
+				<i class="fas fa-video demoicon"></i>
+			</section>
 		</div>
 	</div>
 
