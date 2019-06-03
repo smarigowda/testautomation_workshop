@@ -47,6 +47,7 @@
 			border: none;
 			background: transparent;
 		}
+
 		.fa-ban {
 			color: red;
 		}
@@ -57,170 +58,85 @@
 	<div class="reveal">
 		<div class="slides">
 			<section class="slide">
-				<h2>Test Automation</h2>
+				<h2>Test/ Browser Automation</h2>
+				<h2>Overview,</h2>
+				<h2>Setup & Running Tests</h2>
 				<br>
 				<br>
 				<br>
-				<p>CDO Team</p>
+				<p>Santosh - CDO Team</p>
 			</section>
 			<section class="slide">
 				<h2>Plan</h2>
 				<ul>
-					<li>Goal</li>
-					<li>Framework</li>
-					<li>Approach</li>
-					<li>Tools</li>
-					<li>Demo</li>
-					<li>Next Steps</li>
+					<li>How Browser Automation Works</li>
+					<li>Tools and Technologies</li>
+					<li>Setup, Config and Running Automated Tests</li>
 				</ul>
 			</section>
-			<section class="slide">
-				<h2>Goal & Benefits</h2>
-				<ul>
-					<li>Write test spec without much of `coding` knowledge</li>
-					<li>Reduce Time To Test</li>
-					<li>Continuous Testing</li>
-					<li>Confidence in Code Change</li>
-					<li>Improve Product Quality</li>
-					<li>Speed up development</li>
-				</ul>
-			</section>
-			<section class="slide">
-				<h2>Framework Benefits</h2>
-				<ul>
-					<li>Structure</li>
-					<li>Building Blocks</li>
-					<li>Composable</li>
-					<li>Scalablity</li>
-					<li>Maintenance</li>
-				</ul>
-			</section>
-			<section>
-				<section class="slide">
-					<h2>Building Block Abstracts</h2>
+			<section class="slide" id="howitworks">
+				<section>
+					<h2>How Automation Works</h2>
 					<ul>
-						<li>Selection</li>
-						<li>Operation</li>
-						<li>Verification</li>
-						<li>Wait</li>
-						<li>Retry</li>
+						<li>Webdriver Architecture</li>
+						<li>Webdriver IO</li>
 					</ul>
 				</section>
 				<section>
-					<h2>Retry</h2>
-					<img src="images/retry-when-querying-task-details.PNG" alt=""
-						style="height: 500px; border: none">
-				</section>
-			</section>
-			<section class="slide">
-				<h2>Approach</h2>
-				<ul>
-					<li>POC - Tool Selection</li>
-					<li>Develop Test Script - PA Dealing</li>
-					<li>Building Blocks</li>
-					<li>Refactor Test Script</li>
-					<li>Iterate - Gift Register</li>
-				</ul>
-			</section>
-			<section>
-				<section class="slide">
-					<h2>Tool Selection</h2>
-					<ul>
-						<li><a href="https://developers.google.com/web/tools/puppeteer/">Puppeteer</a></li>
-						<li><a href="https://devexpress.github.io/testcafe/">Test Cafe</a></li>
-						<li><a href="https://webdriver.io/">Webdriver IO</a> <i class="fas fa-check tickmark"></i></li>
-					</ul>
-				</section>
-				<section>
-					Puppeteer - Google
-					<img src="images/puppeteer.PNG" alt="Puppeteer Tool">
-				</section>
-				<section>
-					Test Cafe - DevExpress
-					<img src="images/test-cafe.PNG" alt="Test Cafe Tool">
-				</section>
-				<section>
-					Webdrive IO
-					<img src="images/webdriver-io.PNG" alt="Webdriver IO Tool">
+					<img src="images/workshop_1/selenium_webdriver_architecture.PNG" alt="Webdriver Architecture">
 				</section>
 			</section>
 			<section>
-				<section class="slide">
-					<h2>Walk-through: High Level</h2>
+				<section>
+					<h2>Tools & Technologies</h2>
 					<ul>
-						<li>Gift Register Workflow
-						</li>
-						<li>Building Blocks
-							<ul>
-								<li>Components</li>
-								<li>DB Access</li>
-							</ul>
-						</li>
-						<li>Composable Functions</li>
-						<li>Composition</li>
+						<li>Node JS</li>
+						<ul>
+							<li>npm</li>
+							<li>yarn</li>
+						</ul>
+						<li>Git</li>
+						<li>Git Lab</li>
+						<li>Git Bash</li>
 					</ul>
 				</section>
 				<section>
-					<h2>Components</h2>
-					<img src="images/building-block-components.PNG" alt="" style="height: 500px; border: none">
-				</section>
-				<section>
-					<h2>Database</h2>
-					<img src="images/building-block-db.PNG" alt="" style="height: 500px; width: 500px; border: none">
-				</section>
-				<section>
-					<h2>Composable Functions</h2>
-					<img src="images/composable-functions.PNG" alt="" style="height: 500px; border: none">
-				</section>
-				<section>
-					<h2>Composed Paths</h2>
-					<img src="images/paths-composed-using-composable-functions.PNG" alt=""
-						style="height: 500px; border: none">
-				</section>
-			</section>
-			<section class="demo" style="display: flex">
-				<p>Demo &nbsp;</p>
-				<i class="fas fa-video demoicon"></i>
-			</section>
-			<section class="demo">
-				<h2>Workflows Automated</h2>
-				<ul>
-					<li>PA Dealing &nbsp; <i class="fas fa-check tickmark"></i></li>
-					<li>Gift Register &nbsp; <i class="fas fa-check tickmark"></i></li>
-					<li>Leaving Clients &nbsp; <i class="fas fa-hourglass"></i></li>
-				</ul>
-			</section>
-			<section>
-				<section id="current">
-					<h2>Next Steps</h2>
-					<ul>
-						<li>Verify Workflow Data &nbsp;<i class="fas fa-check tickmark"></i></li>
-						<li>Verify EMail &nbsp; <i class="fas fa-check tickmark"></i></li>
-						<li>Verify Paths/ Bookmarks &nbsp; <i class="fas fa-check tickmark"></i></li>
-						<li>Standardise Search Component</li>
-						<li>Automate Stubbing</li>
-						<li>Workshop</li>
-						<li>Continuous Testing - TeamCity &nbsp;<i class="fas fa-check tickmark"></i> </li>
-					</ul>
-				</section>
-				<section>
-					<h2>TeamCity Job</h2>
-					<img src="images/teamcity--all-tests--smoke-test.PNG" alt=""
+					<img src="images/workshop_1/about_node_js.png" alt="About Node JS"
 						style="height: 500px; border: none">
 				</section>
 				<section>
-					<h2>Slack Integration</h2>
-					<img src="images/qa-autotest-bot.PNG" alt=""
+					<img src="images/workshop_1/nodejs_architecture.PNG" alt="Node JS Architecture"
 						style="height: 500px; border: none">
 				</section>
-			</section>
 
+			</section>
+			<section id="links1">
+				<h2>References - 1/2</h2>
+				<a href="https://www.softwaretestingmaterial.com/selenium-webdriver-architecture/"
+					alt="Webdriver Architecture">Webdriver Architecture</a><br />
+				<a href="https://www.w3.org/TR/webdriver1/" alt="Webdriver Protocol">Webdriver Protocol</a><br />
+				<a href="https://webdriver.io/" alt="Webdriver IO">Webdriver IO</a><br />
+				<a href="https://nodejs.org/en/" alt="Node.js">Node.js</a><br />
+				<a href="https://stackoverflow.com/questions/36766696/which-is-correct-node-js-architecture/"
+					alt="Node.js Architecture">Node.js Architecture</a><br />
+				<a href="https://about.gitlab.com/" alt="About Git Lab">Git Lab</a><br />
+				<a href="https://git-scm.com/" alt="About Git">Git - Version Control System</a><br />
+				<a href="https://www.npmjs.com/" alt="About npm">npm</a><br />
+				<a href="https://gitforwindows.org/" alt="Git Bash">Git Bash</a><br />
+				<a href="https://yarnpkg.com/en/" alt="Yarn">Yarn - Facebook</a><br />
+			</section>
+			<section id="links2">
+				<h2>References - 2/2</h2>
+				<p>Ask the team to provide links to the following</p>
+				<ul>
+					<li>Ruffer Git Lab</li>
+					<li>Automation Framework Repository (Ruffer Git Lab)</li>
+				</ul>
+			</section>
 			<section>
-				<h3>Thank you</h3>
-				<br>
-				<br>
-				<br>
-				<img src="images/questons-and-feedback.svg" alt="Questions & Feedback" class="questions-and-feedback">
+				<h2>Questions & Feedback</h2>
+				<img src="images/questons-and-feedback.svg" alt="Q&A"
+					style="border: none; box-shadow: 0 8px 6px -6px black; border-radius: 15px">
 			</section>
 		</div>
 	</div>
