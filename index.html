@@ -1,206 +1,298 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>reveal.js</title>
 
-	<title>reveal.js</title>
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+    <style>
+      .tickmark,
+      .demoicon,
+      .fa-hourglass-half,
+      .fa-hourglass {
+        color: green;
+      }
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
-	<style>
-		.tickmark,
-		.demoicon,
-		.fa-hourglass-half,
-		.fa-hourglass {
-			color: green;
-		}
+      .fa-pause {
+        color: red;
+      }
 
-		.fa-pause {
-			color: red;
-		}
+      section.demo {
+        display: flex;
+      }
 
-		section.demo {
-			display: flex;
-		}
+      .and-symbol {
+        font-size: 12px;
+      }
 
-		.and-symbol {
-			font-size: 12px;
-		}
+      .reveal section img.questions-and-feedback {
+        border: none;
+        background: transparent;
+      }
 
-		.reveal section img.questions-and-feedback {
-			border: none;
-			background: transparent;
-		}
+      .fa-ban {
+        color: red;
+      }
+    </style>
+  </head>
 
-		.fa-ban {
-			color: red;
-		}
-	</style>
-</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="slide">
+          <h2>Test/ Browser Automation</h2>
+          <h2>Overview,</h2>
+          <h2>Setup & Running Tests</h2>
+          <br />
+          <br />
+          <br />
+          <p>Santosh - CDO Team</p>
+          <p style="font-size: 1.5rem">
+            https://smarigowda.github.io/testautomation_workshop/
+          </p>
+        </section>
+        <section class="slide">
+          <h2>Plan</h2>
+          <ul>
+            <li>Browser Automation - History</li>
+            <li>Browser Automation - Webdriver</li>
+            <li>Tools and Technologies</li>
+            <li>Setup, Config and Running Automated Tests</li>
+          </ul>
+        </section>
+        <section class="slide" id="howitworks">
+          <section>
+            <h2>How Automation Works</h2>
+            <ul>
+              <li>Webdriver Architecture</li>
+              <li>Webdriver IO</li>
+            </ul>
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/selenium_webdriver_architecture.PNG"
+              alt="Webdriver Architecture"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/webdriver_io_homepage.png"
+              alt="Webdriver Architecture"
+            />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Tools & Technologies</h2>
+            <ul>
+              <li>Node JS</li>
+              <ul>
+                <li>nvm - Node Version Manager</li>
+                <li>npm</li>
+                <li>yarn</li>
+              </ul>
+              <li>Git</li>
+              <li>Git Lab</li>
+              <li>Git Bash - Client</li>
+              <li>VS Code - Editor</li>
+              <li>TeamCity - CI</li>
+              <li>cmder - Console Emulator</li>
+            </ul>
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/about_node_js.png"
+              alt="About Node JS"
+              style="height: 500px; border: none"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/nodejs_architecture.PNG"
+              alt="Node JS Architecture"
+              style="height: 500px; border: none"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/vscode.PNG"
+              alt="VS Code"
+              style="height: 500px; border: none"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/teamcity_ci.PNG"
+              alt="TeamCity"
+              style="height: 500px; border: none"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/tests_run_from_teamcity_CI.PNG"
+              alt="Tests Run from CI"
+              style="height: 300px; border: none"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/console_emulator.PNG"
+              alt="cmder - console emulator"
+              style="height: 500px; border: none"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/w3c_webdriver_standard.PNG"
+              alt="w3c webdriver"
+              style="height: 500px; border: none"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/nvm_for_windows.PNG"
+              alt="nvm for Windows"
+              style="height: 500px; border: none"
+            />
+          </section>
+          <section>
+            <img
+              src="images/workshop_1/webdriver_for_chrome.PNG"
+              alt="Webdriver for Chrome"
+              style="height: 500px; border: none"
+            />
+          </section>
+        </section>
+        <section id="links1">
+          <h2>References - 1/2</h2>
+          <a
+            href="https://www.softwaretestingmaterial.com/selenium-webdriver-architecture/"
+            alt="Webdriver Architecture"
+            >Webdriver Architecture</a
+          ><br />
+          <a href="https://www.w3.org/TR/webdriver1/" alt="Webdriver Protocol"
+            >Webdriver Protocol</a
+          ><br />
+          <a href="https://webdriver.io/" alt="Webdriver IO">Webdriver IO</a
+          ><br />
+          <a href="https://nodejs.org/en/" alt="Node.js">Node.js</a><br />
+          <a
+            href="https://stackoverflow.com/questions/36766696/which-is-correct-node-js-architecture/"
+            alt="Node.js Architecture"
+            >Node.js Architecture</a
+          ><br />
+          <a href="https://about.gitlab.com/" alt="About Git Lab">Git Lab</a
+          ><br />
+          <a href="https://git-scm.com/" alt="About Git"
+            >Git - Version Control System</a
+          ><br />
+          <a href="https://www.npmjs.com/" alt="About npm">npm</a><br />
+          <a href="https://gitforwindows.org/" alt="Git Bash">Git Bash</a><br />
+          <a href="https://yarnpkg.com/en/" alt="Yarn">Yarn - Facebook</a><br />
+        </section>
+        <section id="links3">
+          <h2>References - 2/2</h2>
+          <a href="https://www.jetbrains.com/teamcity/" alt="TeamCity Home Page"
+            >TeamCity</a
+          ><br />
+          <a href="https://code.visualstudio.com/" alt="VS Code Home Page"
+            >VS Code</a
+          ><br />
+          <a
+            href="https://github.com/coreybutler/nvm-windows"
+            alt="nvm - Node Version Manager"
+            >nvm</a
+          ><br />
+          <a
+            href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"
+            alt="JDK"
+            >jdk</a
+          ><br />
+          <a href="http://chromedriver.chromium.org/getting-started" alt="JDK"
+            >Chromedriver for Webdriver</a
+          ><br />
+          <a
+            href="https://saucelabs.com/blog/a-brief-history-of-the-selenium-testing-framework"
+            alt="History of Selenium"
+            >History of Selenium</a
+          ><br />
+          <a href="https://www.seleniumhq.org/" alt="Selenium Home Page"
+            >Selenium</a
+          ><br />
+          <a
+            href="https://www.w3.org/standards/history/webdriver1"
+            alt="Selenium Home Page"
+            >W3C Webdriver Standard - History</a
+          ><br />
+        </section>
+        <section id="links3">
+          <h2>References Internal</h2>
+          <p style="font-size: 1rem; color: orange">
+            Ask the team to get links
+          </p>
+          <ul>
+            <li>Ruffer Git Lab</li>
+            <li>Automation Framework Repository (Ruffer Git Lab)</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Questions & Feedback</h2>
+          <img
+            src="images/questons-and-feedback.svg"
+            alt="Q&A"
+            style="border: none; box-shadow: 0 8px 6px -6px black; border-radius: 15px"
+          />
+        </section>
+      </div>
+    </div>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section class="slide">
-				<h2>Test/ Browser Automation</h2>
-				<h2>Overview,</h2>
-				<h2>Setup & Running Tests</h2>
-				<br>
-				<br>
-				<br>
-				<p>Santosh - CDO Team</p>
-				<p style="font-size: 1.5rem">https://smarigowda.github.io/testautomation_workshop/</p>
-			</section>
-			<section class="slide">
-				<h2>Plan</h2>
-				<ul>
-					<li>How Browser Automation Works</li>
-					<li>Tools and Technologies</li>
-					<li>Setup, Config and Running Automated Tests</li>
-				</ul>
-			</section>
-			<section class="slide" id="howitworks">
-				<section>
-					<h2>How Automation Works</h2>
-					<ul>
-						<li>Webdriver Architecture</li>
-						<li>Webdriver IO</li>
-					</ul>
-				</section>
-				<section>
-					<img src="images/workshop_1/selenium_webdriver_architecture.PNG" alt="Webdriver Architecture">
-				</section>
-				<section>
-					<img src="images/workshop_1/webdriver_io_homepage.png" alt="Webdriver Architecture">
-				</section>
-			</section>
-			<section>
-				<section>
-					<h2>Tools & Technologies</h2>
-					<ul>
-						<li>Node JS</li>
-						<ul>
-							<li>nvm - Node Version Manager</li>
-							<li>npm</li>
-							<li>yarn</li>
-						</ul>
-						<li>Git</li>
-						<li>Git Lab</li>
-						<li>Git Bash - Client</li>
-						<li>VS Code - Editor</li>
-						<li>TeamCity - CI</li>
-						<li>cmder - Console Emulator</li>
-					</ul>
-				</section>
-				<section>
-					<img src="images/workshop_1/about_node_js.png" alt="About Node JS"
-						style="height: 500px; border: none">
-				</section>
-				<section>
-					<img src="images/workshop_1/nodejs_architecture.PNG" alt="Node JS Architecture"
-						style="height: 500px; border: none">
-				</section>
-				<section>
-					<img src="images/workshop_1/vscode.PNG" alt="VS Code" style="height: 500px; border: none">
-				</section>
-				<section>
-					<img src="images/workshop_1/teamcity_ci.PNG" alt="TeamCity" style="height: 500px; border: none">
-				</section>
-				<section>
-					<img src="images/workshop_1/tests_run_from_teamcity_CI.PNG" alt="Tests Run from CI"
-						style="height: 300px; border: none">
-				</section>
-				<section>
-					<img src="images/workshop_1/console_emulator.PNG" alt="cmder - console emulator"
-						style="height: 500px; border: none">
-				</section>
-				<section>
-					<img src="images/workshop_1/w3c_webdriver_standard.PNG" alt="w3c webdriver"
-						style="height: 500px; border: none">
-				</section>
-				<section>
-					<img src="images/workshop_1/nvm_for_windows.PNG" alt="nvm for Windows"
-						style="height: 500px; border: none">
-				</section>
-				<section>
-					<img src="images/workshop_1/webdriver_for_chrome.PNG" alt="Webdriver for Chrome"
-						style="height: 500px; border: none">
-				</section>
-			</section>
-			<section id="links1">
-				<h2>References - 1/2</h2>
-				<a href="https://www.softwaretestingmaterial.com/selenium-webdriver-architecture/"
-					alt="Webdriver Architecture">Webdriver Architecture</a><br />
-				<a href="https://www.w3.org/TR/webdriver1/" alt="Webdriver Protocol">Webdriver Protocol</a><br />
-				<a href="https://webdriver.io/" alt="Webdriver IO">Webdriver IO</a><br />
-				<a href="https://nodejs.org/en/" alt="Node.js">Node.js</a><br />
-				<a href="https://stackoverflow.com/questions/36766696/which-is-correct-node-js-architecture/"
-					alt="Node.js Architecture">Node.js Architecture</a><br />
-				<a href="https://about.gitlab.com/" alt="About Git Lab">Git Lab</a><br />
-				<a href="https://git-scm.com/" alt="About Git">Git - Version Control System</a><br />
-				<a href="https://www.npmjs.com/" alt="About npm">npm</a><br />
-				<a href="https://gitforwindows.org/" alt="Git Bash">Git Bash</a><br />
-				<a href="https://yarnpkg.com/en/" alt="Yarn">Yarn - Facebook</a><br />
-			</section>
-			<section id="links3">
-				<h2>References - 2/2</h2>
-				<a href="https://www.jetbrains.com/teamcity/" alt="TeamCity Home Page">TeamCity</a><br />
-				<a href="https://code.visualstudio.com/" alt="VS Code Home Page">VS Code</a><br />
-				<a href="https://github.com/coreybutler/nvm-windows" alt="nvm - Node Version Manager">nvm</a><br />
-				<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"
-					alt="JDK">jdk</a><br />
-				<a href="http://chromedriver.chromium.org/getting-started" alt="JDK">Chromedriver for
-					Webdriver</a><br />
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-			</section>
-			<section id="links3">
-				<h2>References Internal</h2>
-				<p style="font-size: 1rem; color: orange">Ask the team to get links</p>
-				<ul>
-					<li>Ruffer Git Lab</li>
-					<li>Automation Framework Repository (Ruffer Git Lab)</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Questions & Feedback</h2>
-				<img src="images/questons-and-feedback.svg" alt="Q&A"
-					style="border: none; box-shadow: 0 8px 6px -6px black; border-radius: 15px">
-			</section>
-		</div>
-	</div>
-
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
-
-	<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			dependencies: [
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
-			]
-		});
-	</script>
-</body>
-
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
 </html>
